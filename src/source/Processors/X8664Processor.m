@@ -62,7 +62,6 @@
         iLocalVars  = NULL;
     }
 
-    [super dealloc];
 }
 
 //  loadDyldDataSection:

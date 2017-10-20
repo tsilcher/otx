@@ -61,7 +61,6 @@ extern BOOL gCancel;
         iLocalVars  = NULL;
     }
 
-    [super dealloc];
 }
 
 //  loadDyldDataSection:
@@ -786,9 +785,9 @@ extern BOOL gCancel;
             case NLSymType:
                 if (classNamePtr)
                 {
-                    uint32_t	namePtrValue	= *(uint32_t*)classNamePtr;
+                    uint32_t    namePtrValue    = *(uint32_t*)classNamePtr;
 
-                    namePtrValue	= OSSwapBigToHostInt32(namePtrValue);
+                    namePtrValue    = OSSwapBigToHostInt32(namePtrValue);
                     classNamePtr    = [self getPointer:namePtrValue type:&classNameType];
 
                     switch (classNameType)
@@ -798,8 +797,8 @@ extern BOOL gCancel;
                             {
                                 cfstring_object classNameCFString = *(cfstring_object*)classNamePtr;
 
-                                namePtrValue	= classNameCFString.oc_string.chars;
-                                namePtrValue	= OSSwapBigToHostInt32(namePtrValue);
+                                namePtrValue    = classNameCFString.oc_string.chars;
+                                namePtrValue    = OSSwapBigToHostInt32(namePtrValue);
                                 classNamePtr    = [self getPointer:namePtrValue type:NULL];
                                 className       = classNamePtr;
                             }

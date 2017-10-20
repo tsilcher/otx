@@ -60,7 +60,6 @@
         iLocalVars  = NULL;
     }
 
-    [super dealloc];
 }
 
 //  loadDyldDataSection:
@@ -887,12 +886,12 @@
                 break;
 
             case NLSymType:
-				if (classNamePtr)
-				{
-					UInt64	namePtrValue	= *(UInt64*)classNamePtr;
+                if (classNamePtr)
+                {
+                    UInt64    namePtrValue    = *(UInt64*)classNamePtr;
 
-					namePtrValue	= OSSwapBigToHostInt64(namePtrValue);
-					classNamePtr    = [self getPointer:namePtrValue type:&classNameType];
+                    namePtrValue    = OSSwapBigToHostInt64(namePtrValue);
+                    classNamePtr    = [self getPointer:namePtrValue type:&classNameType];
 
                     switch (classNameType)
                     {
@@ -901,8 +900,8 @@
                             {
                                 cfstring_object_64 classNameCFString = *(cfstring_object_64*)classNamePtr;
 
-                                namePtrValue	= classNameCFString.oc_string.chars;
-                                namePtrValue	= OSSwapBigToHostInt64(namePtrValue);
+                                namePtrValue    = classNameCFString.oc_string.chars;
+                                namePtrValue    = OSSwapBigToHostInt64(namePtrValue);
                                 classNamePtr    = [self getPointer:namePtrValue type:NULL];
                                 className       = classNamePtr;
                             }
@@ -918,7 +917,7 @@
                                 "non-lazy symbol pointer points to unrecognized section: %d\n", classNameType);
                             break;
                     }
-				}
+                }
 
                 break;
 

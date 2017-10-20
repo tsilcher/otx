@@ -18,7 +18,7 @@
 - (BOOL)checkOtool: (NSString*)filePath
 {
     NSString* otoolPath = [self pathForTool: @"otool"];
-    NSTask* otoolTask = [[[NSTask alloc] init] autorelease];
+    NSTask* otoolTask = [[NSTask alloc] init];
     NSPipe* silence = [NSPipe pipe];
 
     [otoolTask setLaunchPath: otoolPath];
@@ -43,7 +43,7 @@
     NSString* relToolPath = [relToolBase stringByAppendingPathComponent: toolName];
     
     NSString* selectToolPath = [relToolBase stringByAppendingPathComponent: @"xcode-select"];
-    NSTask* selectTask = [[[NSTask alloc] init] autorelease];
+    NSTask* selectTask = [[NSTask alloc] init];
     NSPipe* selectPipe = [NSPipe pipe];
     NSArray* args = [NSArray arrayWithObject: @"--print-path"];
 
@@ -60,9 +60,9 @@
         return relToolPath;
 
     NSData* selectData = [[selectPipe fileHandleForReading] availableData];
-    NSString* absToolPath = [[[NSString alloc] initWithBytes: [selectData bytes]
+    NSString* absToolPath = [[NSString alloc] initWithBytes: [selectData bytes]
                                                       length: [selectData length]
-                                                    encoding: NSUTF8StringEncoding] autorelease];
+                                                    encoding: NSUTF8StringEncoding];
     
     absToolPath = [[[[absToolPath stringByTrimmingCharactersInSet:
                      [NSCharacterSet whitespaceAndNewlineCharacterSet]]

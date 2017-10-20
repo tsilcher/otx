@@ -54,7 +54,6 @@
     {
         fprintf(stderr, "otx: error loading executable from disk: %s\n",
             UTF8STRING([theError localizedFailureReason]));
-        [self release];
         return nil;
     }
 
@@ -63,7 +62,6 @@
     if (iRAMFileSize < sizeof(iFileArchMagic))
     {
         fprintf(stderr, "otx: truncated executable file\n");
-        [self release];
         return nil;
     }
 
@@ -72,7 +70,6 @@
     if (!iRAMFile)
     {
         fprintf(stderr, "otx: not enough memory to allocate mRAMFile\n");
-        [self release];
         return nil;
     }
 
@@ -119,23 +116,19 @@
 
     if (iCPFiltInputPipe)
     {
-        [iCPFiltInputPipe release];
         iCPFiltInputPipe = nil;
     }
 
     if (iCPFiltOutputPipe)
     {
-        [iCPFiltOutputPipe release];
         iCPFiltOutputPipe = nil;
     }
 
     if (iCPFiltTask)
     {
         [iCPFiltTask terminate];
-        [iCPFiltTask release];
     }
 
-    [super dealloc];
 }
 
 #pragma mark -
@@ -377,7 +370,7 @@
 {
     NSString* md5Path = [NSString pathWithComponents: [NSArray arrayWithObjects:
         @"/", @"sbin", @"md5", nil]];
-    NSTask* md5Task = [[[NSTask alloc] init] autorelease];
+    NSTask* md5Task = [[NSTask alloc] init];
     NSPipe* md5Pipe = [NSPipe pipe];
     NSPipe* errorPipe = [NSPipe pipe];
     NSArray* args = [NSArray arrayWithObjects: @"-q", [iOFile path], nil];
@@ -422,9 +415,9 @@
             return nil;
         }
 
-        NSString* errorString = [[[NSString alloc] initWithBytes: [errorData bytes]
+        NSString* errorString = [[NSString alloc] initWithBytes: [errorData bytes]
                                                           length: [errorData length]
-                                                        encoding: NSUTF8StringEncoding] autorelease];
+                                                        encoding: NSUTF8StringEncoding];
 
         if (errorString == nil || [errorString length] == 0)
             errorString = @"unknown error";
@@ -451,9 +444,9 @@
         return nil;
     }
 
-    NSString* stringFromData = [[[NSString alloc] initWithBytes: [md5Data bytes]
+    NSString* stringFromData = [[NSString alloc] initWithBytes: [md5Data bytes]
                                                          length: [md5Data length]
-                                                       encoding: NSUTF8StringEncoding] autorelease];
+                                                       encoding: NSUTF8StringEncoding];
 
     return [NSString stringWithFormat: @"\nmd5: %@\n", [stringFromData stringByTrimmingCharactersInSet:
         [NSCharacterSet whitespaceAndNewlineCharacterSet]]];
