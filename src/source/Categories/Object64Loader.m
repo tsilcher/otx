@@ -190,6 +190,9 @@
             {
                 objc2_64_method_list_t* methods = (objc2_64_method_list_t*)(iObjcClassListSect.contents +
                     (uintptr_t)(methodBase - iObjcClassListSect.s.addr));
+                if (!methods || (uintptr_t)methods < 0xfffffff || (uintptr_t)methods > 0xfffffffff) {
+                    continue;
+                }
                 objc2_64_method_t* methodArray = &methods->first;
                 count = methods->count;
 
@@ -217,6 +220,9 @@
                 objc2_64_ivar_list_t* ivars = (objc2_64_ivar_list_t*)(iObjcClassListSect.contents +
                     (uintptr_t)(ivarBase - iObjcClassListSect.s.addr));
                 objc2_64_ivar_t* ivarArray = &ivars->first;
+                if (!ivars || (uintptr_t)ivars < 0xfffffff || (uintptr_t)ivars > 0xfffffffff) {
+                    continue;
+                }
                 count = ivars->count;
 
                 if (iSwapped)
