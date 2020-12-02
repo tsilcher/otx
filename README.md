@@ -1,56 +1,35 @@
 otx
 ===
 
-[![Author](https://img.shields.io/badge/Author-Zhi--Wei_Cai-red.svg?style=flat-square)](http://vox.vg/)  ![Build](https://img.shields.io/badge/Build-566-green.svg?style=flat-square)  ![SDK](https://img.shields.io/badge/SDK-10.9-yellow.svg?style=flat-square)  ![License](https://img.shields.io/badge/License-Public-blue.svg?style=flat-square)
+[![Author](https://img.shields.io/badge/Author-tsilcher-blue.svg)](https://github.com/tsilcher/otx)  ![Version](https://img.shields.io/badge/Version-0.25-orange.svg)  ![macOS](https://img.shields.io/badge/macOS-10.9+-brightgreen.svg)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The Mach-O disassembler.
+otool eXtended: Mach-O disassembler.
 
 ![screenshot](Screenshot.png)
 
 Description
 -----------
 
-This is an up-to-date version of otx.
+This version is compatible with macOS 11 Big Sur.
 
 Following changes has been made:
 
-* Based on 10.9 SDK.
+* Based on macOS 12 SDK.
 * 64bit binary.
-* Works with new otool came with Xcode 4.2+.
-* Source code compatible with Xcode 5+.
-* Tons of bug fixes.
+* Works with otool's llvm disassembly.
+* Source code compatible with Xcode 12+.
+* Support for Dark Mode.
+* Bug fixes & quality of life improvements.
+* Compatible with macOS Big Sur.
+* Intel Only!
 
 
 Changelog
 ---------
 
-Build 566:
+Build 1:
 
-* Fix the Save menu. (#4)
-
-Build 565:
-
-* Fix the Open menu. (#3)
-
-Build 564:
-
-* No more symbolic link.
-* Minor UI fix.
-
-Build 563:
-
-* Minor UI updates.
-
-Build 562:
-
-* Update base SDK to 10.9 and Xcode 5.1.
-
-Build 561:
-
-* Initial release.
-
-
-License
--------
-
-The otx project and all original otx source files are in the public domain.
+* Fixed wrong arch type being selected by default.
+* Updated to work with default llvm disassembler.
+* Support for Dark Mode.
+* Added Preference Option for Showing leading '0x' address.

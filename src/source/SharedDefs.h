@@ -25,6 +25,7 @@ typedef struct
     BOOL    demangleCppNames;       // n
     BOOL    returnTypes;            // r
     BOOL    variableTypes;          // v
+    BOOL    leadingZero;            // z
     BOOL    returnStatements;       // R
     BOOL    debugMode;              // -debug
 }

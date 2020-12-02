@@ -18,5 +18,6 @@
 #define ShowMD5Key                  @"ShowMD5"
 #define ShowMethodReturnTypesKey    @"ShowMethodReturnTypes"
 #define ShowReturnStatementsKey     @"ShowReturnStatements"
+#define ShowLeadingZeroAddressKey   @"ShowLeadingZeroAddress"
 #define UseCustomNameKey            @"UseCustomName"
 #define VerboseMsgSendsKey          @"VerboseMsgSends"

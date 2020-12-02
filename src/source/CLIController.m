@@ -153,6 +153,9 @@
                         case 'v':
                             iOpts.variableTypes = !SHOW_VARIABLE_TYPES;
                             break;
+                        case 'z':
+                            iOpts.leadingZero = !SHOW_LEADING_ZERO_ADDRESS;
+                            break;
                         case 'p':
                             iShowProgress = YES;
                             break;

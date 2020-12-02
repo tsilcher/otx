@@ -64,6 +64,7 @@
     [NSArray arrayWithObjects: PrefsGeneralToolbarItemID,       \
     PrefsOutputToolbarItemID, nil]
 
+
 typedef struct
 {
     cpu_type_t      type;
@@ -100,8 +101,9 @@ CPUID;
     IBOutlet NSView*    iPrefsOutputView;
 
     NSURL*                  iObjectFile;
-    cpu_type_t              iSelectedArchCPUType;
-    cpu_subtype_t           iSelectedArchCPUSubType;
+    NXArchInfo*             iSelectedArch;
+    //cpu_type_t              iSelectedArchCPUType; // deprecated!
+    //cpu_subtype_t           iSelectedArchCPUSubType; // deprecated!
     CPUID                   iCPUIDs[4];     // refcons for iArchPopup
     uint32_t                  iFileArchMagic;
     BOOL                    iFileIsValid;
@@ -113,8 +115,9 @@ CPUID;
     NSString*               iOutputFileName;
     NSString*               iOutputFilePath;
     NSView**                iPrefsViews;
-    uint32_t                  iPrefsCurrentViewIndex;
-    host_basic_info_data_t  iHostInfo;
+    NSInteger               iPrefsCurrentViewIndex;
+    NXArchInfo*             iHostInfo;
+    //host_basic_info_data_t  iHostInfo; // deprecated!
     NSShadow*               iTextShadow;
     NSTimer*                iIndeterminateProgBarMainThreadTimer;
 }
@@ -122,7 +125,7 @@ CPUID;
 // main window
 - (void)setupMainWindow;
 - (IBAction)showMainWindow: (id)sender;
-- (void)applyShadowToText: (NSTextField*)inText;
+//- (void)applyShadowToText: (NSTextField*)inText;
 - (IBAction)selectArch: (id)sender;
 - (IBAction)openExe: (id)sender;
 - (IBAction)syncOutputText: (id)sender;

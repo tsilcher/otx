@@ -27,9 +27,6 @@
 		25924BB60D4D85A00050AA16 /* SysUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 252DFABA0C9D38A100C712BD /* SysUtils.m */; };
 		25924BFB0D4D88C90050AA16 /* Searchers64.m in Sources */ = {isa = PBXBuildFile; fileRef = 25924BF90D4D88C90050AA16 /* Searchers64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		25924C210D4D89AE0050AA16 /* Searchers64.m in Sources */ = {isa = PBXBuildFile; fileRef = 25924BF90D4D88C90050AA16 /* Searchers64.m */; };
-		25A62EFD0C38A7C500B08D38 /* Prefs Output Icon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 25A62EFA0C38A7C500B08D38 /* Prefs Output Icon.tif */; };
-		25A62EFE0C38A7C500B08D38 /* Prefs General Icon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 25A62EFB0C38A7C500B08D38 /* Prefs General Icon.tif */; };
-		25A62EFF0C38A7C500B08D38 /* Main Window Background.tif in Resources */ = {isa = PBXBuildFile; fileRef = 25A62EFC0C38A7C500B08D38 /* Main Window Background.tif */; };
 		25A62F060C38A86C00B08D38 /* App Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 25A62F050C38A86C00B08D38 /* App Icon.icns */; };
 		55E1267E14DE58BB003B4A16 /* ObjcTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1267C14DE46F3003B4A16 /* ObjcTypes.m */; };
 		84DB7F6E25770FE6005B5746 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB7F6C25770FE5005B5746 /* MainMenu.xib */; };
@@ -101,9 +98,6 @@
 		25924A890D4D670C0050AA16 /* Exe32Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exe32Processor.h; path = source/Processors/Exe32Processor.h; sourceTree = "<group>"; };
 		25924BF90D4D88C90050AA16 /* Searchers64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Searchers64.m; path = source/Categories/Searchers64.m; sourceTree = "<group>"; };
 		25924BFA0D4D88C90050AA16 /* Searchers64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Searchers64.h; path = source/Categories/Searchers64.h; sourceTree = "<group>"; };
-		25A62EFA0C38A7C500B08D38 /* Prefs Output Icon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "Prefs Output Icon.tif"; path = "images/Prefs Output Icon.tif"; sourceTree = "<group>"; };
-		25A62EFB0C38A7C500B08D38 /* Prefs General Icon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "Prefs General Icon.tif"; path = "images/Prefs General Icon.tif"; sourceTree = "<group>"; };
-		25A62EFC0C38A7C500B08D38 /* Main Window Background.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = "Main Window Background.tif"; path = "images/Main Window Background.tif"; sourceTree = "<group>"; };
 		25A62F050C38A86C00B08D38 /* App Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "App Icon.icns"; path = "images/App Icon.icns"; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -266,9 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				25A62F050C38A86C00B08D38 /* App Icon.icns */,
-				25A62EFA0C38A7C500B08D38 /* Prefs Output Icon.tif */,
-				25A62EFB0C38A7C500B08D38 /* Prefs General Icon.tif */,
-				25A62EFC0C38A7C500B08D38 /* Main Window Background.tif */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				84DB7F6C25770FE5005B5746 /* MainMenu.xib */,
 				E1978C6A0AC603A40096EE62 /* Help */,
@@ -431,9 +422,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A62F060C38A86C00B08D38 /* App Icon.icns in Resources */,
-				25A62EFF0C38A7C500B08D38 /* Main Window Background.tif in Resources */,
-				25A62EFE0C38A7C500B08D38 /* Prefs General Icon.tif in Resources */,
-				25A62EFD0C38A7C500B08D38 /* Prefs Output Icon.tif in Resources */,
 				84DB7F6E25770FE6005B5746 /* MainMenu.xib in Resources */,
 				E1978C9E0AC603A40096EE62 /* Help in Resources */,
 			);

@@ -18,11 +18,11 @@ int main(
     int     argc,
     char*   argv[])
 {
-    if (OS_IS_PRE_TIGER)
-    {
-        fprintf(stderr, "otx requires Mac OS X 10.4 or higher.\n");
-        return -1;
-    }
+//    if (OS_IS_PRE_TIGER)
+//    {
+//        fprintf(stderr, "otx requires Mac OS X 10.4 or higher.\n");
+//        return -1;
+//    }
 
     int result  = 1;
 
