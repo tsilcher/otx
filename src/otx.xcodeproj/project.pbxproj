@@ -32,7 +32,7 @@
 		25A62EFF0C38A7C500B08D38 /* Main Window Background.tif in Resources */ = {isa = PBXBuildFile; fileRef = 25A62EFC0C38A7C500B08D38 /* Main Window Background.tif */; };
 		25A62F060C38A86C00B08D38 /* App Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 25A62F050C38A86C00B08D38 /* App Icon.icns */; };
 		55E1267E14DE58BB003B4A16 /* ObjcTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1267C14DE46F3003B4A16 /* ObjcTypes.m */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		84DB7F6E25770FE6005B5746 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DB7F6C25770FE5005B5746 /* MainMenu.xib */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B738E51D1912A5E8002AB41B /* ObjcTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E1267C14DE46F3003B4A16 /* ObjcTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E145F6D30B437F5900615A16 /* SmoothViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E145F6D20B437F5900615A16 /* SmoothViewAnimation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -110,10 +110,10 @@
 		32CA4F630368D1EE00C91783 /* otx_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = otx_Prefix.pch; sourceTree = "<group>"; };
 		55E1267B14DE46F3003B4A16 /* ObjcTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjcTypes.h; path = source/ObjcTypes.h; sourceTree = "<group>"; };
 		55E1267C14DE46F3003B4A16 /* ObjcTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObjcTypes.m; path = source/ObjcTypes.m; sourceTree = "<group>"; };
+		84DB7F6D25770FE5005B5746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* otx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72DD5AE1912B1DD00D009C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D28C208A253E4A0C009D4CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		D28C208B253E4A15009D4CB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en; path = en.lproj/Help; sourceTree = "<group>"; };
 		E1167F1C09C8086900E7398D /* StolenDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StolenDefs.h; path = source/StolenDefs.h; sourceTree = "<group>"; };
 		E13539810A68178D00CBDDE5 /* SyscallStrings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SyscallStrings.h; path = source/SyscallStrings.h; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 				25A62EFB0C38A7C500B08D38 /* Prefs General Icon.tif */,
 				25A62EFC0C38A7C500B08D38 /* Main Window Background.tif */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				84DB7F6C25770FE5005B5746 /* MainMenu.xib */,
 				E1978C6A0AC603A40096EE62 /* Help */,
 			);
 			name = Resources;
@@ -395,7 +395,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
 						DevelopmentTeam = 928652TY3Y;
@@ -430,11 +430,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				25A62F060C38A86C00B08D38 /* App Icon.icns in Resources */,
 				25A62EFF0C38A7C500B08D38 /* Main Window Background.tif in Resources */,
 				25A62EFE0C38A7C500B08D38 /* Prefs General Icon.tif in Resources */,
 				25A62EFD0C38A7C500B08D38 /* Prefs Output Icon.tif in Resources */,
+				84DB7F6E25770FE6005B5746 /* MainMenu.xib in Resources */,
 				E1978C9E0AC603A40096EE62 /* Help in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,12 +511,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		84DB7F6C25770FE5005B5746 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D28C208A253E4A0C009D4CB8 /* Base */,
+				84DB7F6D25770FE5005B5746 /* Base */,
 			);
-			name = MainMenu.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		E1978C6A0AC603A40096EE62 /* Help */ = {
@@ -533,10 +533,10 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
@@ -546,7 +546,7 @@
 				GCC_PREFIX_HEADER = otx_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_BUNDLE_IDENTIFIER = vg.vox.otx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsilcher.otx;
 				PRODUCT_NAME = otx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -555,9 +555,9 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
@@ -568,7 +568,7 @@
 				GCC_PREFIX_HEADER = otx_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_BUNDLE_IDENTIFIER = vg.vox.otx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsilcher.otx;
 				PRODUCT_NAME = otx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -577,8 +577,9 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -591,6 +592,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -613,7 +615,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "";
@@ -623,8 +625,9 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -637,6 +640,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -656,7 +660,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -664,7 +668,6 @@
 		E1FA33D40B1005670060060A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = "";
@@ -683,7 +686,6 @@
 		E1FA33D50B1005670060060A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = "";

@@ -1,18 +1,43 @@
-# Xcode
+# OS generated files
 .DS_Store
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Local Debug folder
+Debug/
+
+#Xcode crap
 !default.mode1v3
-*.mode2v3
 !default.mode2v3
-*.perspectivev3
+!default.pbxuser
 !default.perspectivev3
-*.xcworkspace
-!default.xcworkspace
-xcuserdata
-profile
+*.hmap
+*.ipa
+*.mode1v3
+*.mode2v3
 *.moved-aside
-DerivedData
-.idea/
+*.pbxuser
+*.perspectivev3
+*.xccheckout
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+## Build generated
+build/
+DerivedData/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
